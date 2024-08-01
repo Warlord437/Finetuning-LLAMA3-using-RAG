@@ -68,32 +68,32 @@ Kaggle Notebook: https://www.kaggle.com/code/jsaha437/fine-tune-llama-3-for-sent
 Importing Libraries and Setting Environment Variables
 This section imports the necessary libraries and sets environment variables. CUDA_VISIBLE_DEVICES specifies which GPUs to use, and TOKENIZERS_PARALLELISM controls tokenization parallelism.
 
-Data Preparation
+## Data Preparation
 This section prepares the dataset. It reads the data from a CSV file, splits it into training and evaluation sets, and formats the data into prompts for the model.
 
-Evaluation Function
+## Evaluation Function
 evaluate
 This function evaluates the model's performance by calculating accuracy, generating a classification report, and displaying a confusion matrix.
 
-Predict Function
+## Predict Function
 predict_with_rag
 This function generates sentiment predictions for the test data using the RAG model. It processes each input, generates predictions, and extracts the sentiment from the generated text.
 
-Fine-Tuning the Model
+## Fine-Tuning the Model
 This section sets up the configuration and training arguments for PEFT (Parameter-Efficient Fine-Tuning) and initializes the SFTTrainer for training the model. The trainer.train() method starts the training process, and the trained model and tokenizer are saved to disk.
 
-Setting Up RAG
+## Setting Up RAG
 This section sets up the RAG model and tokenizer. RAG combines dense retrieval and generative models to produce better contextualized outputs.
 
-Example Usage
+## Example Usage
 test_custom_document
 This function tests the model with custom financial news headlines and returns the predicted sentiment.
 
-Conclusion
+## Conclusion
 This tutorial demonstrates the process of fine-tuning a Llama 3 model for sentiment analysis on financial news headlines, leveraging the FinancialPhraseBank dataset and integrating Retrieval-Augmented Generation for improved performance.
 
 Feel free to contribute to this project by opening issues or submitting pull requests.
 
-License
+## License
 This project is licensed under the MIT License.
 
